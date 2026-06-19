@@ -1,0 +1,60 @@
+<svg width="100%" viewBox="0 0 680 280" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="ns_g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#4F46E5"/>
+      <stop offset="100%" stop-color="#06B6D4"/>
+    </linearGradient>
+    <radialGradient id="ns_glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#4F46E5" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#4F46E5" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- fond -->
+  <rect x="0" y="0" width="680" height="280" rx="20" fill="#0F172A"/>
+  <rect x="0.5" y="0.5" width="679" height="279" rx="20" fill="none" stroke="#334155" stroke-width="1"/>
+
+  <!-- badge / glyphe : @ comme noeud central d'un graphe (algorithme + IA) -->
+  <g transform="translate(140,140)">
+    <circle cx="0" cy="0" r="96" fill="url(#ns_glow)"/>
+
+    <!-- arêtes du graphe -->
+    <g stroke="url(#ns_g)" stroke-width="2" opacity="0.5">
+      <line x1="0" y1="0" x2="-66" y2="-44"/>
+      <line x1="0" y1="0" x2="68" y2="-38"/>
+      <line x1="0" y1="0" x2="-58" y2="56"/>
+      <line x1="0" y1="0" x2="60" y2="58"/>
+      <line x1="-66" y1="-44" x2="68" y2="-38"/>
+      <line x1="-58" y1="56" x2="60" y2="58"/>
+    </g>
+
+    <!-- noeuds -->
+    <g fill="#0F172A" stroke="url(#ns_g)" stroke-width="2.5">
+      <circle cx="-66" cy="-44" r="7"/>
+      <circle cx="68" cy="-38" r="7"/>
+      <circle cx="-58" cy="56" r="7"/>
+      <circle cx="60" cy="58" r="7"/>
+    </g>
+
+    <!-- @ central, l'arobase comme spirale algorithmique -->
+    <text x="0" y="0" font-family="Georgia, serif" font-size="118" font-weight="700"
+          fill="url(#ns_g)" text-anchor="middle" dominant-baseline="central">@</text>
+  </g>
+
+  <!-- wordmark -->
+  <text x="272" y="118" font-family="Georgia, serif" font-size="50" font-weight="700"
+        fill="white" letter-spacing="-1">No<tspan fill="url(#ns_g)"> Sage&apos;s</tspan> Editor</text>
+
+  <rect x="272" y="134" width="330" height="2" rx="1" fill="url(#ns_g)" opacity="0.55"/>
+
+  <!-- tagline : le jeu @lgorithme -->
+  <text x="272" y="166" font-family="'Courier New', monospace" font-size="22" font-weight="700"
+        fill="#06B6D4" letter-spacing="1">@lgorithme</text>
+
+  <text x="272" y="196" font-family="Arial, sans-serif" font-size="11.5" fill="#64748B" letter-spacing="3">
+    EDITEUR DE LOGICIELS METIER &amp; IA</text>
+
+  <!-- petit sigma decoratif, clin d'oeil maths -->
+  <text x="640" y="252" font-family="Georgia, serif" font-size="26" fill="#334155"
+        text-anchor="end">&#931;</text>
+</svg>
