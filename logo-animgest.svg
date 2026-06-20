@@ -16,6 +16,6 @@
   <text x="252" y="142" font-family="Georgia, serif" font-size="62" font-weight="700" fill="white" letter-spacing="-3">Anim<tspan fill="url(#g3)" dx="0">&apos;Gest</tspan></text>
   <rect x="252" y="155" width="365" height="2" rx="1" fill="url(#g3)" opacity="0.55"/>
   <text x="252" y="180" font-family="Arial, sans-serif" font-size="11.5" fill="#64748B" letter-spacing="3.5">GESTION ANIMALIERE PROFESSIONNELLE</text>
-  <text x="252" y="216" font-family="Arial, sans-serif" font-size="15" fill="#94A3B8" letter-spacing="0.5">NoSage&apos;s Editor</text>
+  <text x="252" y="216" font-family="Arial, sans-serif" font-size="15" fill="#94A3B8" letter-spacing="0.5">No Sage&apos;s Editor</text>
   <rect x="252" y="226" width="52" height="2" rx="1" fill="url(#g3)"/>
 </svg>

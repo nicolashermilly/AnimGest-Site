@@ -46,7 +46,9 @@
   .hero::before{content:"";position:absolute;inset:0;z-index:-1;
     background:radial-gradient(900px 420px at 18% -10%,rgba(79,70,229,.20),transparent 60%),
                radial-gradient(700px 360px at 92% 8%,rgba(6,182,212,.14),transparent 60%)}
-  .hero-logo{display:block;width:100%;max-width:380px;height:auto;margin-bottom:30px;
+  .hero > .wrap{display:flex;gap:48px;align-items:flex-start;justify-content:space-between}
+  .hero-text{flex:1 1 auto;min-width:0}
+  .hero-logo{flex:0 0 auto;width:100%;max-width:475px;height:auto;margin-top:6px;
     filter:drop-shadow(0 12px 30px rgba(0,0,0,.35))}
   .eyebrow{font-family:var(--mono);font-size:13px;letter-spacing:2px;color:var(--cyan);
     text-transform:uppercase;margin-bottom:22px}
@@ -113,6 +115,8 @@
 
   @media(max-width:860px){
     .navlinks a:not(.btn){display:none}
+    .hero > .wrap{flex-direction:column}
+    .hero-logo{order:-1;max-width:380px;margin:0 0 26px}
     .grid{grid-template-columns:1fr 1fr}
     .metiers-grid{grid-template-columns:1fr 1fr}
   }
@@ -142,18 +146,20 @@
 <main>
   <section class="hero">
     <div class="wrap">
-      <img src="logo-animgest.svg" alt="Anim'Gest - NoSage's Editor" class="hero-logo" width="680" height="320">
-      <p class="eyebrow">ERP des professionnels du soin animalier</p>
-      <h1>Un outil, <em>douze métiers</em> de l'animal.</h1>
-      <p class="lede">
-        Anim'Gest réunit la gestion de votre activité — clients, animaux, rendez-vous,
-        facturation conforme et signature électronique — dans un logiciel pensé pour
-        chaque métier du soin animalier.
-      </p>
-      <div class="hero-cta">
-        <a href="#contact" class="btn btn-primary">Demander une démo</a>
-        <a href="#fonctions" class="btn btn-ghost">Voir les fonctionnalités</a>
+      <div class="hero-text">
+        <p class="eyebrow">ERP des professionnels du soin animalier</p>
+        <h1>Un outil, <em>douze métiers</em> de l'animal.</h1>
+        <p class="lede">
+          Anim'Gest réunit la gestion de votre activité — clients, animaux, rendez-vous,
+          facturation conforme et signature électronique — dans un logiciel pensé pour
+          chaque métier du soin animalier.
+        </p>
+        <div class="hero-cta">
+          <a href="#contact" class="btn btn-primary">Demander une démo</a>
+          <a href="#fonctions" class="btn btn-ghost">Voir les fonctionnalités</a>
+        </div>
       </div>
+      <img src="logo-animgest.svg" alt="Anim'Gest - No Sage's Editor" class="hero-logo" width="680" height="320">
     </div>
 
     <div class="metiers-band">
