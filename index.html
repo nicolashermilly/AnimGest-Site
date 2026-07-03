@@ -97,6 +97,11 @@
   .metier:hover{background:var(--surface-2)}
   .metier .num{font-family:var(--mono);font-size:12px;color:var(--faint)}
   .metier .name{font-size:15.5px;font-weight:600}
+  a.metier{cursor:pointer}
+  a.metier .name{transition:color .2s}
+  a.metier:hover .name{color:var(--cyan)}
+  .metier .soon{margin-left:auto;font-family:var(--mono);font-size:10px;letter-spacing:1px;
+    text-transform:uppercase;color:var(--faint);border:1px solid var(--line);border-radius:999px;padding:3px 9px}
 
   /* ---- CTA ---- */
   .cta{position:relative}
@@ -148,7 +153,7 @@
     <div class="wrap">
       <div class="hero-text">
         <p class="eyebrow">ERP des professionnels du soin animalier</p>
-        <h1>Un outil, <em>douze métiers</em> de l'animal.</h1>
+        <h1>Un outil, <em>treize métiers</em> de l'animal.</h1>
         <p class="lede">
           Anim'Gest réunit la gestion de votre activité — clients, animaux, rendez-vous,
           facturation conforme et signature électronique — dans un logiciel pensé pour
@@ -177,6 +182,7 @@
         <span class="chip"><b>10</b>Sport canin</span>
         <span class="chip"><b>11</b>Nutritionniste</span>
         <span class="chip"><b>12</b>Associations</span>
+        <span class="chip"><b>13</b>Médiateur animalier</span>
         <!-- duplicata pour défilement continu -->
         <span class="chip"><b>01</b>Comportementaliste</span>
         <span class="chip"><b>02</b>Toiletteur</span>
@@ -241,7 +247,7 @@
   <section id="metiers" style="background:var(--bg-deep)">
     <div class="wrap">
       <div class="sec-head">
-        <p class="eyebrow">Douze verticales</p>
+        <p class="eyebrow">Treize verticales</p>
         <h2>Un socle commun, adapté à chaque métier.</h2>
         <p>Les écrans, les documents et le vocabulaire s'ajustent à votre activité —
            pas l'inverse.</p>
@@ -255,11 +261,12 @@
         <div class="metier"><span class="num">05</span><span class="name">Éducateur canin</span></div>
         <div class="metier"><span class="num">06</span><span class="name">Pension &amp; chenil</span></div>
         <div class="metier"><span class="num">07</span><span class="name">Centre équestre</span></div>
-        <div class="metier"><span class="num">08</span><span class="name">Vétérinaire</span></div>
-        <div class="metier"><span class="num">09</span><span class="name">Ostéopathe animalier</span></div>
-        <div class="metier"><span class="num">10</span><span class="name">Sport canin</span></div>
-        <div class="metier"><span class="num">11</span><span class="name">Nutritionniste</span></div>
-        <div class="metier"><span class="num">12</span><span class="name">Associations</span></div>
+        <a class="metier" href="metiers/sante.html#veterinaire"><span class="num">08</span><span class="name">Vétérinaire</span></a>
+        <a class="metier" href="metiers/sante.html#osteopathe"><span class="num">09</span><span class="name">Ostéopathe animalier</span></a>
+        <a class="metier" href="metiers/sport-canin.html"><span class="num">10</span><span class="name">Sport canin</span></a>
+        <a class="metier" href="metiers/sante.html#nutritionniste"><span class="num">11</span><span class="name">Nutritionniste</span></a>
+        <a class="metier" href="metiers/associations.html"><span class="num">12</span><span class="name">Associations</span></a>
+        <div class="metier"><span class="num">13</span><span class="name">Médiateur animalier</span><span class="soon">à venir</span></div>
       </div>
     </div>
   </section>

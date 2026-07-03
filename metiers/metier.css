@@ -1,0 +1,139 @@
+/* ===========================================================
+   Anim'Gest — pages verticales /metiers/<slug>.html
+   Charte reprise de ../index.html (violet #4F46E5 / cyan #06B6D4).
+   Feuille partagee par toutes les pages metier (DRY).
+   =========================================================== */
+:root{
+  --bg:#0F172A; --bg-deep:#0B1120; --surface:#1E293B; --surface-2:#172033;
+  --violet:#4F46E5; --cyan:#06B6D4;
+  --text:#F8FAFC; --muted:#94A3B8; --faint:#64748B; --line:#334155;
+  --display:Georgia,'Times New Roman',serif;
+  --body:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;
+  --mono:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  background:var(--bg);color:var(--text);font-family:var(--body);
+  line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden;
+}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+
+/* ---- nav ---- */
+header{position:sticky;top:0;z-index:50;backdrop-filter:blur(10px);
+  background:rgba(15,23,42,.72);border-bottom:1px solid var(--line)}
+nav{display:flex;align-items:center;justify-content:space-between;height:68px;gap:20px}
+.brand{font-family:var(--display);font-weight:700;font-size:22px;letter-spacing:-1px}
+.brand span{background:linear-gradient(120deg,var(--violet),var(--cyan));
+  -webkit-background-clip:text;background-clip:text;color:transparent}
+.navlinks{display:flex;gap:30px;align-items:center}
+.navlinks a{color:var(--muted);font-size:14.5px;transition:color .2s}
+.navlinks a:hover{color:var(--text)}
+.btn{display:inline-flex;align-items:center;gap:8px;border-radius:8px;
+  font-weight:600;font-size:14.5px;padding:11px 20px;transition:transform .15s,box-shadow .2s;cursor:pointer}
+.btn-primary{background:linear-gradient(120deg,var(--violet),var(--cyan));color:#fff}
+.btn-primary:hover{transform:translateY(-1px);box-shadow:0 8px 24px -8px rgba(79,70,229,.6)}
+.btn-ghost{border:1px solid var(--line);color:var(--text)}
+.btn-ghost:hover{border-color:var(--cyan)}
+a:focus-visible,.btn:focus-visible{outline:2px solid var(--cyan);outline-offset:3px}
+
+/* ---- fil d'ariane ---- */
+.breadcrumb{font-family:var(--mono);font-size:12.5px;letter-spacing:1px;color:var(--faint);
+  text-transform:uppercase;padding-top:26px}
+.breadcrumb a{color:var(--muted)}.breadcrumb a:hover{color:var(--cyan)}
+.breadcrumb .sep{margin:0 8px;color:var(--line)}
+
+/* ---- hero metier ---- */
+.hero{position:relative;padding:44px 0 0}
+.hero::before{content:"";position:absolute;inset:0;z-index:-1;
+  background:radial-gradient(900px 420px at 18% -10%,rgba(79,70,229,.20),transparent 60%),
+             radial-gradient(700px 360px at 92% 8%,rgba(6,182,212,.14),transparent 60%)}
+.eyebrow{font-family:var(--mono);font-size:13px;letter-spacing:2px;color:var(--cyan);
+  text-transform:uppercase;margin-bottom:20px}
+h1{font-family:var(--display);font-weight:700;font-size:clamp(34px,5.4vw,58px);
+  line-height:1.05;letter-spacing:-1.3px;max-width:20ch}
+h1 em{font-style:normal;background:linear-gradient(120deg,var(--violet),var(--cyan));
+  -webkit-background-clip:text;background-clip:text;color:transparent}
+.lede{margin:24px 0 34px;font-size:19px;color:var(--muted);max-width:60ch}
+.hero-cta{display:flex;gap:14px;flex-wrap:wrap}
+
+/* ---- sections ---- */
+section{padding:80px 0}
+.sec-head{max-width:64ch;margin-bottom:44px}
+.sec-head .eyebrow{margin-bottom:14px}
+h2{font-family:var(--display);font-weight:700;font-size:clamp(26px,3.6vw,38px);
+  letter-spacing:-1px;line-height:1.14}
+.sec-head p{margin-top:16px;color:var(--muted);font-size:17px}
+h3{font-family:var(--display);font-size:20px;font-weight:700;margin-bottom:8px}
+
+/* ---- grille de cartes ---- */
+.grid{display:grid;gap:20px;grid-template-columns:repeat(3,1fr)}
+.grid.two{grid-template-columns:repeat(2,1fr)}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:28px;
+  transition:border-color .2s,transform .2s}
+.card:hover{border-color:var(--violet);transform:translateY(-3px)}
+.card .ic{width:42px;height:42px;border-radius:10px;display:grid;place-items:center;
+  background:rgba(79,70,229,.12);margin-bottom:18px;font-family:var(--mono);
+  font-size:15px;color:var(--cyan);font-weight:700}
+.card p{color:var(--muted);font-size:15px}
+.card ul{color:var(--muted);font-size:15px;margin:6px 0 0;padding-left:18px}
+.card ul li{margin:4px 0}
+
+/* ---- bandeau sous-metiers (ancres) ---- */
+.subnav{display:flex;gap:10px;flex-wrap:wrap;margin-top:8px}
+.subnav a{font-family:var(--mono);font-size:13px;color:var(--muted);border:1px solid var(--line);
+  border-radius:999px;padding:7px 15px;background:var(--surface);transition:border-color .2s,color .2s}
+.subnav a:hover{border-color:var(--cyan);color:var(--text)}
+
+/* ---- bloc metier ancre ---- */
+.metier-block{padding:70px 0;border-top:1px solid var(--line)}
+.metier-block .eyebrow{margin-bottom:12px}
+.metier-block .role-line{font-family:var(--mono);font-size:12.5px;color:var(--faint);
+  text-transform:uppercase;letter-spacing:1px;margin-bottom:18px}
+
+/* ---- encart differenciateur / conformite ---- */
+.callout{background:linear-gradient(120deg,rgba(79,70,229,.14),rgba(6,182,212,.10));
+  border:1px solid var(--line);border-radius:18px;padding:38px 40px;margin-top:8px}
+.callout.strong{border-color:var(--violet)}
+.callout .tag{font-family:var(--mono);font-size:12px;letter-spacing:2px;color:var(--cyan);
+  text-transform:uppercase;margin-bottom:14px}
+.callout h3{font-size:23px;margin-bottom:12px}
+.callout p{color:var(--muted);font-size:16px;max-width:70ch}
+.callout p + p{margin-top:12px}
+.callout strong{color:var(--text)}
+
+/* ---- listes valeur ---- */
+.value{display:grid;gap:14px;grid-template-columns:repeat(2,1fr);margin-top:8px}
+.value .item{display:flex;gap:12px;align-items:flex-start;background:var(--surface);
+  border:1px solid var(--line);border-radius:12px;padding:18px 20px}
+.value .item .k{color:var(--cyan);font-family:var(--mono);font-weight:700;flex:0 0 auto}
+.value .item .v{color:var(--muted);font-size:15px}
+.value .item .v b{color:var(--text);font-weight:600}
+
+/* ---- CTA ---- */
+.cta-box{background:linear-gradient(120deg,rgba(79,70,229,.14),rgba(6,182,212,.10));
+  border:1px solid var(--line);border-radius:20px;padding:56px 48px;text-align:center}
+.cta-box h2{margin-bottom:16px}
+.cta-box p{color:var(--muted);max-width:50ch;margin:0 auto 30px;font-size:17px}
+
+/* ---- footer ---- */
+footer{border-top:1px solid var(--line);padding:48px 0;color:var(--faint);font-size:14px}
+.foot{display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap}
+.foot a{color:var(--muted)}.foot a:hover{color:var(--cyan)}
+.foot .edit{font-family:var(--display)}
+.foot .edit b{background:linear-gradient(120deg,var(--violet),var(--cyan));
+  -webkit-background-clip:text;background-clip:text;color:transparent;font-weight:700}
+
+@media(max-width:860px){
+  .navlinks a:not(.btn){display:none}
+  .grid,.grid.two{grid-template-columns:1fr 1fr}
+  .value{grid-template-columns:1fr}
+}
+@media(max-width:560px){
+  .grid,.grid.two{grid-template-columns:1fr}
+  .cta-box,.callout{padding:36px 24px}
+}
+@media(prefers-reduced-motion:reduce){
+  *{animation:none!important;scroll-behavior:auto;transition:none!important}
+}
