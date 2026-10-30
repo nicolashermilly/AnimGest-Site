@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Médiateur animalier — 13e verticale en préparation | Anim'Gest</title>
+<meta name="description" content="La médiation animale (zoothérapie, interventions assistées par l'animal) est la 13e verticale d'Anim'Gest, en préparation : un modèle à part où l'animal médiateur est l'outil du professionnel et le client une structure.">
+<link rel="stylesheet" href="metier.css">
+</head>
+<body>
+
+<header>
+  <nav class="wrap">
+    <div class="brand"><a href="../index.html">Anim<span>'Gest</span></a></div>
+    <div class="navlinks">
+      <a href="../index.html#fonctions">Fonctionnalités</a>
+      <a href="../index.html#metiers">Métiers</a>
+      <a href="https://no-sages-editor.com/" target="_blank" rel="noopener">Documentation</a>
+      <a href="../index.html#contact" class="btn btn-primary">Demander une démo</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="wrap">
+      <p class="breadcrumb"><a href="../index.html">Anim'Gest</a><span class="sep">/</span><a href="../index.html#metiers">Métiers</a><span class="sep">/</span>Médiateur animalier</p>
+      <p class="eyebrow">Médiateur animalier · en préparation</p>
+      <h1>La <em>médiation animale</em>, bientôt sur Anim'Gest.</h1>
+      <p class="lede">
+        Zoothérapie et interventions assistées par l'animal : un métier au modèle vraiment à part.
+        C'est la 13e verticale d'Anim'Gest — en cours de préparation. Cette page en présente le
+        positionnement ; le module dédié est en conception.
+      </p>
+      <div class="hero-cta">
+        <a href="mailto:contact@no-sages-editor.com?subject=M%C3%A9diation%20animale%20-%20%C3%AAtre%20tenu%20inform%C3%A9" class="btn btn-primary">Être tenu informé</a>
+        <a href="#modele" class="btn btn-ghost">Ce qui la distingue</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="modele" style="padding-top:24px">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">Un modèle à part</p>
+        <h2>Trois différences qui changent tout.</h2>
+        <p>La médiation animale inverse le modèle habituel des métiers du soin animalier — c'est
+           précisément ce qui justifie une verticale à part entière.</p>
+      </div>
+      <div class="grid">
+        <article class="card">
+          <div class="ic">01</div>
+          <h3>Un animal pas comme les autres</h3>
+          <p>L'<b>animal médiateur</b> est l'outil de travail du professionnel — pas l'animal d'un
+             client. Suivi vétérinaire renforcé, aptitude et règles de bien-être (charge de travail,
+             repos) lui sont propres.</p>
+        </article>
+        <article class="card">
+          <div class="ic">02</div>
+          <h3>Un client qui est une structure</h3>
+          <p>Le client payeur est une <b>structure</b> — EHPAD, IME, MAS, ESAT, hôpital, école,
+             foyer… — le plus souvent liée par une convention pluri-séances. Un modèle B2B2C.</p>
+        </article>
+        <article class="card">
+          <div class="ic">03</div>
+          <h3>Des bénéficiaires à protéger</h3>
+          <p>Les personnes accompagnées — résidents, patients, enfants — sont souvent vulnérables.
+             Leurs données appellent un soin particulier et une confidentialité renforcée.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding-top:0">
+    <div class="wrap">
+      <div class="callout">
+        <p class="tag">Statut — en préparation</p>
+        <h3>13e verticale, en cours de conception.</h3>
+        <p>
+          Le module « Médiateur animalier » n'est pas encore disponible : cette page décrit le
+          <strong>positionnement</strong> du métier, pas des fonctionnalités livrées. Nous ne
+          communiquons pas de date à ce stade.
+        </p>
+        <p>
+          Envie d'être prévenu·e quand la verticale ouvrira&nbsp;? Écrivez-nous : on vous tiendra au
+          courant.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" style="border-top:1px solid var(--line)">
+    <div class="wrap">
+      <div class="cta-box">
+        <h2>Suivre l'arrivée de la médiation animale</h2>
+        <p>Laissez-nous un mot : nous vous informerons de l'ouverture de la 13e verticale d'Anim'Gest.</p>
+        <a href="mailto:contact@no-sages-editor.com?subject=M%C3%A9diation%20animale%20-%20%C3%AAtre%20tenu%20inform%C3%A9"
+           class="btn btn-primary">Être tenu informé</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <div class="edit">Anim'Gest — édité par <b>No Sage's Editor</b></div>
+    <div>
+      <a href="../index.html#metiers">Tous les métiers</a>
+      &nbsp;·&nbsp;
+      <a href="https://no-sages-editor.com/" target="_blank" rel="noopener">Documentation</a>
+      &nbsp;·&nbsp;
+      <a href="mailto:contact@no-sages-editor.com">Contact</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
